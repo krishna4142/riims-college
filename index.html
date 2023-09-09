@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<style>
+	.logo{
+	margin-left:40px;
+	}
+	span{
+	display:block;
+	margin-left:470px;
+	margin-right:350px;
+	}
+	.logo img {
+	border:1px solid red;
+	height:100px;
+	width:100px;
+	border-radius:45px;
+	background-color:red;
+	}
+	.head{
+	margin:30px;
+	width:100%;
+	display:flex;
+	background-color:rgb(250,100,180);
+
+	}
+	.name{
+	margin-top:30px;
+	}
+	#marquee{
+	background-color:yellow;
+	color:red;
+	}
+	.body{
+	background-color:rgb(20, 100 ,30);
+	}
+	.title div{
+	padding:20px;
+	}
+	.title{
+	display:flex;
+	flex-direction:row-reverse;
+	}
+	button{
+	color:red;
+	background-color:rgb(25,100,30);
+	text-decoration:none;
+	}
+	.home{
+	width:900px;
+	margin-left:300px;
+	height:400px;
+	background-color:rgb(40,120,20);
+	display:grid;
+	grid-template-columns:250px auto;
+	gap:10px;
+	}
+	.home div{
+	//border:1px solid red;
+	}
+	.home img{
+	width:230px;
+	height:380px;
+	border-radius:40px;
+	margin:12px;
+	}
+	.course{
+	width:900px;
+	margin-left:300px;
+	height:400px;
+	background-color:rgb(40,120,20);
+	display:grid;
+	grid-template-columns:290px 290px 290px;
+	gap:15px;
+	}
+	.course div{
+	text-align:center;
+	//padding-top:50px;
+	//border:1px solid red;
+	}
+	.subcourse img{
+	height:250px;
+	width:290px;
+	}
+	.mar {
+	height:50px;
+ 	}
+	  marquee{
+	  color:rgb(160,240,90);
+	  }
+	  .register{
+	  	background-color:rgb(100,30,70);
+		width:300px;
+		height:400px;
+		border:1px solid red;
+		margin-left:600px;
+		}
+		.register div{
+		//border:2px solid rgb(50,30,10);
+		border-radius:70px;
+		margin:10px;
+		background-color:rgb(140,30,70);
+		}
+		.register img{
+		height:100px;
+		width:100px;
+		border-radius:50px;
+		margin-left:100px;
+		margin-top:20px;
+		}
+		html{
+		scroll-behavior:smooth;
+		}
+		a{
+			text-decoration: none;
+			color: rgb(5, 255, 184);
+		}
+	</style>
+</head>
+<body class="body">
+    <div class="head">
+		<div class="logo"><img src="unnamed.PNG"></div>
+        <div class="name"><span>RAYALA SEEMA INSTITUE OF INFORMATION</span><span>  AND MANAGEMENT SCINCE</span></div>
+		<div class="logo"><img src="IMG_8453-980x656.jpg"></div>
+   </div>
+	<marquee id="marquee">&#128073;&#128073;Rayalaseema Institute of Information And Management Scince ,
+Tirupati</marquee>
+	<div class="title">
+	<div><button><a href="#COURSE">COURSE</button></a></div>
+	<div><button><a href="#REGISTRATION">REGISTER</a></button></div>
+ 
+	<div><button><a href="#Home">HOME</a></button></div>
+
+	</div>
+	 <h2 class="homepage">HOME</h2>
+	<div class="home" id="Home">
+	<div ><img src="prinspal1.png">
+	</div>
+	<div><h3>ABOUT</h3>
+	<p>RIIMS - Rayalaseema Institue Of InformationAnd Management Science is locatd in Chittor, Andhra Pradesh and it is affiliated with Sri Venkateswara University. It is one of the well-known institues that ensures that each & every student will get special guidence & support during their journy at Rayalaseema. Apart from academic education, the institue organies extra much-neede exposure they require.</p>
+	<h3>KEY HIGHLIGHTS</h3>
+	<ul>
+	<li>Excelent Placement record since inception</li>
+	<li>State-of-the-art infrastructure</li>
+	<li>Good Exposure to student on all fronts</li>
+	</ul>
+	</div>
+	</div><br><br><br>
+	<h2 class="homepage" id="course">COURSE</h2>
+	<div class="course" id="COURSE">
+	<div >
+	<div class="mar"><h3><marquee direction="up">Master of Business Administration</marquee></h3></div>
+	M.B.A
+	<div class="subcourse"><img src="MBA-Books.png"></div>
+	<p>&#128073 <strike>Click here</strike></p>
+	</div>
+	<div >	<div class="mar"><h3><marquee direction="up">Master of Coumpter Application</marquee></h3></div>
+	M.C.A
+		<div class="subcourse"><img src="MCA-Books.png"></div>
+			<p>&#128073 <a href="index2.html">Click here</a></p>
+	</div>
+	<div >
+		<div class="mar"><h3><marquee direction="up">Master of Scince</marquee></h3></div>
+	M.Sc
+		<div class="subcourse"><img src="M.Sc-Books.png"></div>
+	<p>&#128073 <strike>Click here</strike></p>
+	</div>
+	</div>
+		 <h2 class="homepage">REGISTRATION</h2>
+		 <div class="register" id="REGISTRATION"><div><img src="97923644-user-icon-avatar-login-sign-circle-button-with-soft-color-gradient-background-vector.jpg"></div>
+		 <form >
+		 <label>user name:</lable>
+		 <input type="text" value="user name"/><br><br><br>
+		 <label>pass word:</lable>
+		 <input type="password" value="user name"/><br><br><br>
+		 <input type="button" value="Submit" style="margin-left:120px;">
+		 </form>
+		 </div>
+
+</body>
+</html>
