@@ -1,7 +1,7 @@
 .head{
     height:130px;
     width: 80%;
-    border: 1px solid red;
+    background-color: rgb(124, 128, 128);
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
@@ -10,12 +10,13 @@
 .head div{
     height: 100px;
     width: 100px;
-    border: 1px solid blue;
+    /* border: 1px solid rgb(128, 40, 49); */
 }
 .name{
     flex-grow: 1;
     text-align: center;
     padding-top: 2%;
+    color: rgb(195, 23, 32);
 }
 img{
     height: 100px;
@@ -62,7 +63,7 @@ a{
         height: auto;
         width: 80%;
         display: flex;
-        border:1px solid red;
+        /* border:1px solid red; */
      }
      .course div{
         /* border: 1px solid red; */
@@ -78,15 +79,16 @@ a{
     #regis{
         height: auto;
         width: 80%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+     }
     .sub_regis{
         height: auto;
         width: 35%;
-        border: 1px solid red;
+        margin-left: 5%;
+        /* border: 1px solid red; */
      }
       #REGISTRATION{
         height: auto;
@@ -101,4 +103,17 @@ a{
         background-image: url("Background-1-802x1080.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+       }
+       .sss{
+        background-color: rgb(91, 161, 82);
+       }
+       marquee{
+        color: rgb(37, 30, 179);
+       }
+       .direction{
+        height: auto;
+        width: 80%;
+       }
+       .dir{
+        color: rgb(249, 13, 13);
        }
