@@ -1,43 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #s-con{
-            height: 200px;
-            width: 200px;
-            border: 1px solid red;
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  let y = document.forms["myForm"]["pname"].value;
+  let a="RIIMS";
+  if(x==a && y==a ){
+    return true;
+  }
+  else {
+    alert("Enter valid name and password");
+    return false;
+  }
+}
+</script>
+<style>
+    .parent{
+        width: 40%;
+        height: 30%;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border-radius: 10%;
+        justify-content: center;
+        background-color: rgb(151, 31, 83);
+        animation-name: sa;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes sa{
+        from{
+            background-color: rgb(151, 31, 83);
         }
-    </style>
-    <script>
-        function valid(){
-            var a=document.getElementById("name").value;
-            var b=document.getElementById("pass").value;
-            var c="RIIMS"
-            if( a==b)
-            {
-                return true;
-            }
-            else{
-                alert("enter a valid name and passwors");
-                false;
-                
-             }
-
+        to{
+            background-color: rgb(31, 16, 107);
         }
-    </script>
+    }
+    .child{
+        text-align: center;
+    }
+      body{
+        margin-top: 20%;
+        margin-left: 35%;
+        background-color: rgb(149, 117, 123);
+        animation-name: ex;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes ex{
+        from{
+            background-color: rgb(84, 77, 119);
+        }
+        to{
+            background-color: rgb(100, 68, 82);
+        }
+      }
+      h1{
+        color:white ;
+      }
+       img{
+        width: 10px;
+       }
+        
+      </style>
 </head>
 <body>
-    <div id="con">
-    <div id="s-con">
-    <form onsubmit="valid()" action="index2.html"    method="post">
-        <input type="text" placeholder="enter valid name" id="name"><BR>
-        <input type="password" placeholder="Pass word" id="pass"><br>
-        <input type="button" value="SUBMIT" onclick="valid()">
-    </form>
-    </div>
-    </div>
+    <div class="conta">
+<div class="parent">
+ <div class="child">
+    <h1>LOGIN</h1><br>
+<form name="myForm" action="index3.html" onsubmit="return validateForm()" method="post">
+  <div class="sai"><input type="text" name="fname" placeholder="Enter Name">
+  <br><br>
+  <input type="password" name="pname" placeholder="Enter password"><br><br>
+  <div class="sbuton"><div ><input type="submit" value="Submit"></div></div>
+</form>
+</div>
+</div>
+</div>
 </body>
 </html>

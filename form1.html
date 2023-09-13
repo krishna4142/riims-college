@@ -6,17 +6,30 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
      <link rel="stylesheet" href="form1.css">
+     <script>
+      function valid(){
+        var x=document.getElementById("name").value;
+        var y=document.getElementById("pword").value;
+        var a="RIIMS";
+        if(x==a&&y==a){
+          return true;
+        }
+        else{
+          alert("enter valid detailes");
+        }
+      }
+     </script>
 </head>
 <body>
     <div class="login-box">
         <h2>Login</h2>
-        <form>
+        <form onsubmit="return valid()" action="index2.html">
           <div class="user-box">
-            <input type="text" name="" required="">
+            <input type="text" id="name" required="">
             <label>Username</label>
           </div>
           <div class="user-box">
-            <input type="password" name="" required="">
+            <input type="password" id="pword" required="">
             <label>Password</label>
           </div>
           <a href="#" >
