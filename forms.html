@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #s-con{
+            height: 200px;
+            width: 200px;
+            border: 1px solid red;
+        }
+    </style>
+    <script>
+        function valid(){
+            var a=document.getElementById("name").value;
+            var b=document.getElementById("pass").value;
+            var c="RIIMS"
+            if( a==b)
+            {
+                return true;
+            }
+            else{
+                alert("enter a valid name and passwors");
+                false;
+                
+             }
+
+        }
+    </script>
+</head>
+<body>
+    <div id="con">
+    <div id="s-con">
+    <form onsubmit="valid()" action="index2.html"    method="post">
+        <input type="text" placeholder="enter valid name" id="name"><BR>
+        <input type="password" placeholder="Pass word" id="pass"><br>
+        <input type="button" value="SUBMIT" onclick="valid()">
+    </form>
+    </div>
+    </div>
+</body>
+</html>
