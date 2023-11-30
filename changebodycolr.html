@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+    <style>
+        body{
+            background-color: rgb(212, 207, 200);
+            display: flex;
+            justify-content: center;
+        }
+        .parent{
+            background: rgb(150, 159, 167);
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: space-between;
+            justify-content: space-between;
+            margin-top: 15%;
+        }
+        h1{
+            color: rgb(196, 37, 37);
+        }
+        button{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1>CHOUSE COLOR</h1>
+        <div class="child">
+            <label for="">Enter color:</label>
+            <input type="color" id="col">
+        </div>
+        <div>
+            <button onclick="valid()">click</button>
+        </div>
+     </div>
+     <script>
+        let color =document.getElementById("col");
+        function valid(){
+            document.body.style.background=color.value;
+        }
+     </script>
+</body>
+</html>

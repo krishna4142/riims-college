@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+         
+        html{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            padding-top: 10%;
+        }
+        .header{
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(rgba(255, 255, 255, 0.811),rgba(255, 255, 255, 0.789),rgba(255, 255, 255, 0.756));
+            box-shadow: 0 10px 20px 10px rgb(204, 179, 179);
+        }
+        .parent{
+            display: flex;
+            /* border: 1px solid red; */
+        
+        }
+        input{
+            border: none;
+            outline: none;
+            width: 80;
+        }
+        .child2 .top{
+            border-bottom: 1px solid black;
+        }
+       .child2 span{
+            display: none;
+        }
+        h1{
+            padding: 5%;
+        }
+        button{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: green;
+            width: 30%;
+        }
+        .top{
+            display: flex;
+        }
+        small{
+            display: none;
+        }
+        #one.open .right{
+            display: block;
+            color: green;
+        }
+        #one.close .wrong{
+            display: block;
+            color: red;
+        }
+        #one.close .one{
+            display: block;
+            color: red;
+        }
+        #two.open .right{
+            display: block;
+            color: green;
+        }
+        #two.close .wrong{
+            display: block;
+            color: red;
+        }
+        #two.close .two{
+            display: block;
+            color: red;
+        }
+        #three.open .right{
+            display: block;
+            color: green;
+        }
+        #three.close .wrong{
+            display: block;
+            color: red;
+        }
+        #three.close .three{
+            display: block;
+            color: red;
+        }
+        #fore.open .right{
+            display: block;
+            color: green;
+        }
+        #fore.close .wrong{
+            display: block;
+            color: red;
+        }
+        #fore.close .fore{
+            display: block;
+            color: red;
+        }
+        #five.open .right{
+            display: block;
+            color: green;
+        }
+        #five.close .wrong{
+            display: block;
+            color: red;
+        }
+        #five.close .five{
+            display: block;
+            color: red;
+        }
+        #six.open .right{
+            display: block;
+            color: green;
+        }
+        #six.close .wrong{
+            display: block;
+            color: red;
+        }
+        #six.close .six{
+            display: block;
+            color: red;
+        }
+    </style>
+</head>
+<body> 
+    <div class="header">
+        <h1>Registration Form</h1>
+    <div class="parent" id="one">
+        <div class="child1" >
+            <label for=""> Enter Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;:</label>
+        </div>
+        <div class="child2">
+             <div class="top">
+            <input type="text" id="name">
+            <span class="material-symbols-outlined right" >check</span>
+            <span class="material-symbols-outlined wrong">close_small</span>
+             </div>
+            <div>
+                <small class="one">enter valid name </small>
+            </div>
+         </div>
+          
+         
+    </div>
+    <div class="parent" id="two">
+        <div class="child1">
+            <label for=""> Enter Your Emain  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+        </div>
+        <div class="child2">
+             <div class="top">
+            <input type="email" id="email">
+            <span class="material-symbols-outlined right" >check</span>
+            <span class="material-symbols-outlined wrong">close_small</span>
+             </div>
+            <div>
+                <small class="two">enter valid email</small>
+            </div>
+         </div>
+          
+         
+    </div>
+    <div class="parent" id="three">
+        <div class="child1">
+            <label for=""> Enter Your Password  :</label>
+        </div>
+        <div class="child2">
+             <div class="top">
+            <input type="password" id="pas">
+            <span class="material-symbols-outlined right" >check</span>
+            <span class="material-symbols-outlined wrong">close_small</span>
+             </div>
+            <div>
+                <small class="three">enter valid Password</small>
+            </div>
+         </div>
+          
+         
+    </div>
+    <div class="parent" id="fore">
+        <div class="child1">
+            <label for=""> Enter D.O.B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+        </div>
+        <div class="child2">
+             <div class="top">
+            <input type="date" id="date">
+            <span class="material-symbols-outlined right" >check</span>
+            <span class="material-symbols-outlined wrong" >close_small</span>
+             </div>
+            <div>
+                <small class="fore">enter D.O.B</small>
+            </div>
+         </div>
+          
+         
+    </div>
+    <div class="parent" id="five">
+        <div class="child1">
+            <label for=""> Enter Gender   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+        </div>
+        <div class="child2">
+             <div class="top">
+            <select name="" id="">
+                <option value="">        </option>
+                <option value="">male</option>
+                <option value="">fe-male</option>
+            </select>
+            <!-- <input type="radio" id="gen1" name="gen">Male
+            <input type="radio" id="gen2" name="gen">Fe-Male -->
+            <span class="material-symbols-outlined right" >check</span>
+            <span class="material-symbols-outlined wrong">close_small</span>
+             </div>
+            <div>
+                <small class="gender">enter gender</small>
+            </div>
+         </div>
+          
+         
+    </div>
+    <div class="parent" id="six">
+        <div class="child1">
+            <label for=""> Enter Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+        </div>
+        <div class="child2">
+             <div class="top">
+            <input type="text" id="address">
+            <span class="material-symbols-outlined right" >check</span>
+            <span class="material-symbols-outlined wrong">close_small</span>
+             </div>
+            <div>
+                <small class="six">enter Address</small>
+            </div>
+         </div>
+          
+         
+    </div>
+     
+          
+    <button onclick="add()">submit</button>
+    </div>
+     </div>
+     <script>
+        let one=document.getElementById("one");
+        let name=document.getElementById("name");
+        let two=document.getElementById("two");
+        let email=document.getElementById("email");
+        let three=document.getElementById("three");
+        let pass=document.getElementById("pas");
+        let fore=document.getElementById("fore");
+        let date=document.getElementById("date");
+        let five=document.getElementById("five");
+        let gen1=document.getElementById("gen1");
+        let gen2=document.getElementById("gen2");
+        let six=document.getElementById("six");
+        let address=document.getElementById("address");
+        function add(){
+            if(name.value.trim()==""){
+                one.classList.add('close');
+                one.classList.remove('open');
+            }
+            else{
+                one.classList.add('open');
+                one.classList.remove('close');
+            }
+            if(email.value.trim()==""){
+                two.classList.add('close');
+                two.classList.remove('open');
+            }
+            else{
+                two.classList.add('open');
+                two.classList.remove('close');
+            }
+            if(pass.value.trim()==""){
+                three.classList.add('close');
+                three.classList.remove('open');
+            }
+            else{
+                three.classList.add('open');
+                three.classList.remove('close');
+            }
+            if(date.value.trim()==""){
+                fore.classList.add('close');
+                fore.classList.remove('open');
+            }
+            else{
+                fore.classList.add('open');
+                fore.classList.remove('close');
+            }
+            if(gen1.value=="off" || gen2.value=="on"){
+                five.classList.add('close');
+                five.classList.remove('open');
+            }
+            else{
+                five.classList.add('open');
+                five.classList.remove('close');
+            }
+            if(address.value.trim()==""){
+                six.classList.add('close');
+                six.classList.remove('open');
+            }
+            else{
+                six.classList.add('open');
+                six.classList.remove('close');
+            }
+         }
+      </script>
+</body>
+</html>

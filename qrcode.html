@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR CODE</title>
+    <style>
+        .parent{
+            width: 280px;
+            height: 400px;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            align-content: space-around;
+            justify-content: space-around;
+            align-items: center;
+            background-color:white;
+            box-shadow: 0 10px 20px grey;
+        }
+        h1{
+            background: linear-gradient(red,green,blue,yellow,pink,grey,yellow);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        body{
+            width: 90%;
+            height: 700px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid red; */
+        }
+        html{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aliceblue;
+        }
+        .qr-img{
+            display: none;
+            height: 200px;
+            width: 200px;
+        }
+        .qr-code.active .qr-img{
+            display: block;
+        }
+        .parent.close .ss{
+            display: none;
+        }
+        h4{
+            display: none;
+        }
+        .parent.close .gen{
+            display: block;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+         <div><h1>QR CODE</h1><h4 class="gen">genarate qr code.....</h4></div>
+        <div class="form ss"><input type="text" id="text" placeholder="enter string"></div>
+        <div class="ss"><button onclick="sai()">submit</button></div>
+    
+        <div class="qr-code">
+            <img src="" alt="" class="qr-img" >
+        </div>
+    </div>
+ 
+    <script>
+        let input=document.querySelector("#text")
+        let img=document.querySelector(".qr-img")
+        let s =document.querySelector(".qr-code")
+        let parent =document.querySelector(".parent");
+         function sai(){
+            let inp=input.value.trim() 
+        img.src= `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${inp}`;
+        s.classList.add("active") 
+        parent.classList.add("close")
+        }
+    </script>
+</body>
+</html>
