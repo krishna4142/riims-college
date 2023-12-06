@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timmer</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="timmer">
+            00:00:00:000
+        </div>
+        <div class="clickers">
+            <button onclick="t()">start</button>
+            <button onclick="phu()">phuse</button>
+            <button>stop</button>
+        </div>
+    </div>
+    <script>
+         
+        let timer=document.querySelector(".timmer");
+         let mis=0,sec=0,min=0+'0',hour=0+'0',tim;
+        function t(){
+              tim=setInterval(te,5);
+        }
+    
+        function te(){
+            mis=mis+10;
+        if(mis>1000)
+        {
+            sec+=1;
+            mis=0;
+            if(sec>=60){
+                min+=1;
+                sec=0;
+                if(min>=60){
+                    hour+=1;
+                }
+            }
+            
+        }
+         
+
+        timer.innerText = `${hour}:${min}:${sec}:${mis}`;
+        }
+        function phu(){
+            clearInterval(tim)
+        }
+        function stop(){
+            clearInterval(tim);
+            
+        }
+    </script>
+</body>
+</html>

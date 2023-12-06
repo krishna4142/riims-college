@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10%;
+            flex-direction: column;
+            padding-left: 20%;
+        }
+        .child{
+            display: flex;
+            justify-content: space-between;
+        }
+        .header{
+            height: 600px;
+            width: 70%;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            align-items: space-around;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .header1{
+            height: 600px;
+            width: 70%;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            align-items: space-around;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .content,.head{
+            display: flex;
+            /* align-items: center; */
+            align-content: start;
+            justify-content: start;
+            flex-wrap: wrap;
+        }
+        h1{
+            text-align: center;
+        }
+        h4{
+            display: flex;
+        }
+        td{
+            width: 200px;
+            overflow: hidden;
+        }
+        table{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        /* .header1{
+            display: none;
+        } */
+        /* .one.open .header1{
+            display: block;
+        }
+        .one.close .header{
+            display: none;
+        } */
+        
+        h5{
+            text-align: center;
+        }
+        button{
+            background-color: rgb(35, 189, 35);
+        }
+        .col{
+            font-weight: normal;
+        }
+        html{
+            background-color: aliceblue;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+ </head>
+<body class="body">
+    <div class="one"> 
+    <div class="header">
+        <h2>Enter Values</h2>
+        <div class="child">
+            <label for="">NAME  </label>
+            <input type="text" id="name" class="col">
+        </div>
+        <div class="child">
+            <label for="">NUMBER  </label> 
+            <input type="tel" id="tel" class="col">
+        </div>
+        <div class="child">
+            <label for="">EMAIL  </label> 
+            <input type="email" id="email" class="col">
+        </div>
+        <div class="child">
+            <label for="">QUALIFICATION 1 </label> 
+            <input type="text" id="qualification1" class="col">
+        </div>
+        <div class="child">
+            <label for="">ACADAMIC YEAR</label> 
+            <input type="text" id="year1" class="col">
+        </div>
+        <div class="child">
+            <label for="">UNIVERSITY</label> 
+            <input type="text" id="UNIVERSITY1" class="col">
+        </div>
+        <div class="child">
+            <label for="">MARKS</label> 
+            <input type="text" id="marks1" class="col">
+        </div>
+        <div class="child">
+            <label for="">QUALIFICATION 2 </label> 
+            <input type="text" id="qualification12" class="col">
+        </div>
+        <div class="child">
+            <label for="">ACADAMIC YEAR</label> 
+            <input type="text" id="year2" class="col">
+        </div>
+        <div class="child">
+            <label for="">UNIVERSITY</label> 
+            <input type="text" id="UNIVERSITY2" class="col">
+        </div>
+        <div class="child">
+            <label for="">MARKS</label> 
+            <input type="text" id="marks2" class="col">
+        </div>
+        <div class="child">
+            <label for="">QUALIFICATION3  </label> 
+            <input type="text" id="qualification3" class="col">
+        </div>
+        <div class="child">
+            <label for="">ACADAMIC YEAR</label> 
+            <input type="text" id="year3" class="col">
+        </div>
+        <div class="child">
+            <label for="">UNIVERSITY</label> 
+            <input type="text" id="UNIVERSITY3" class="col">
+        </div>
+        <div class="child">
+            <label for="">MARKS</label> 
+            <input type="text" id="marks3" class="col">
+        </div>
+         
+        <h5><button onclick="sai()">submit</button></h5>
+    </div>
+     <div class="header1">
+        <h1>RESUME</h1>
+        <div class="head">
+            <div class="left">
+                <h4>
+                    <span class="material-symbols-outlined">
+                        person
+                        </span> <span>Name:&nbsp;&nbsp;</span><span id="nam" class="col"></span>
+                </h4>
+                <h4>
+                <span class="material-symbols-outlined">
+                    mail
+                    </span> <span>Mail:&nbsp;&nbsp;</span><span id="mail" class="col"></span>
+                </h4> 
+                <h4>
+                    <span class="material-symbols-outlined">
+                        call
+                        </span> <span>Pho.No:&nbsp;&nbsp;</span><span id="phone" class="col"></span>
+                </h4>   
+            </div>
+        </div><hr><br><br>
+        <div class="content">
+        <table border="1">
+            <tr>
+                <th>SI.NO</th>
+                <th  >QULIFICATION</th>
+                <th>ACADAMIC YEAR</th>
+                <th> UNIVERSITY</th>
+                <th>PERSENTAGE</th>
+            </tr> 
+            <tr>
+                <td>1</td>
+                <td id="qualification11"></td>
+                <td id="year11"></td>
+                <th id="UNIVERSITY11" class="col"></th>
+                <td id="marks11"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td id="qualification21"></td>
+                <td id="year21"></td>
+                <th id="UNIVERSITY21" class="col"></th>
+                <td id="marks21"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td id="qualification31"></td>
+                <td id="year31"></td>
+                <th id="UNIVERSITY31" class="col"></th>
+                <td id="marks31"></td>
+            </tr>
+            <!-- <tr>
+                <td>4</td>
+                <td id="qualification4"></td>
+                <td id="year4"></td>
+                <th></th>
+                <td id="marks4"></td>
+            </tr> -->
+        </table>
+        </div>
+    </div>
+</div>
+    <script src="reseme.js"></script>
+ </body>
+</html>
